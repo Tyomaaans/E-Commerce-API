@@ -1,0 +1,88 @@
+# ==========================================
+# Go
+# ==========================================
+
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Go build output
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# ==========================================
+# Project Build / Temporary
+# ==========================================
+
+# Temporary directory
+tmp/
+temp/
+
+# Air / live reload
+.air.toml
+
+# Coverage
+coverage.out
+coverage.html
+*.coverprofile
+
+# ==========================================
+# Environment Variables / Secrets
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Docker
+# ==========================================
+
+docker-compose.override.yml
+
+# ==========================================
+# IDE / Editor
+# ==========================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains / GoLand
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
+logs/
+
+# ==========================================
+# OS / Misc
+# ==========================================
+
+*.pid
+*.seed
+*.pid.lock
