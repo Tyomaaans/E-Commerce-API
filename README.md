@@ -217,39 +217,36 @@ go run cmd/main.go
 See `.env.example` for all required variables. Key configs:
 
 ```env
-# Server
-APP_PORT=8080
+# ── App ────────────────────────────────────────────────────
+APP_ENV=
+APP_PORT=
+APP_URL=
 
-# PostgreSQL
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=ecommerce
-DB_USER=postgres
-DB_PASSWORD=
+# ── Database ────────────────────────────────────────────────
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+DATABASE_URL=
+# ── Redis ───────────────────────────────────────────────────
+REDIS_ADDR=
+REDIS_PASSWORD=
 
-# Redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
+# ── JWT ─────────────────────────────────────────────────────
+JWT_SECRET_KEY=
+JWT_EXPIRY=
+DEFAULT_REFRESH_EXPIRY=
+SHORT_REFRESH_EXPIRY=
 
-# Redpanda
-REDPANDA_BROKERS=localhost:9092
 
-# MinIO
-MINIO_ENDPOINT=localhost:9000
-MINIO_ACCESS_KEY=
-MINIO_SECRET_KEY=
-
-# JWT
-JWT_ACCESS_SECRET=
-JWT_REFRESH_SECRET=
-JWT_ACCESS_EXPIRY=15m
-JWT_REFRESH_EXPIRY=7d
-
-# Mail
+# ── SMTP ────────────────────────────────────────────────────
 SMTP_HOST=
 SMTP_PORT=
-SMTP_USER=
+SMTP_FROM=
+SMTP_USERNAME=
 SMTP_PASSWORD=
+
+# ── Redpanda ────────────────────────────────────────────────
+# Dev
+REDPANDA_BROKERS=
 ```
 
 ---
