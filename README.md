@@ -2,7 +2,7 @@
 
 A production-ready REST API for an e-commerce platform built with Go. Designed with scalability and maintainability in mind — featuring a multi-role system, event-driven architecture, and pluggable payment gateway abstraction.
 
-> ⚠️ This project is actively under development. Core features are stable; payment and real-time chat are in progress.
+> ⚠️ This project is actively under development. Core features are stable; upload files, payment, and real-time chat are in progress.
 
 ---
 
@@ -205,11 +205,8 @@ cd E-Commerce-API
 # Copy environment variables
 cp .env.example .env
 
-# Start all services (PostgreSQL, Redis, Redpanda, MinIO)
+# Start all services and Run API in Postman or CURL (PostgreSQL, Redis, Redpanda, etc.)
 docker compose up -d
-
-# Run the API
-go run cmd/main.go
 ```
 
 ### Environment Variables
