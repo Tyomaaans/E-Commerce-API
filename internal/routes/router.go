@@ -153,7 +153,7 @@ func NewUserRouter(
 
 			// Stores
 			admin.GET("/stores",                 storeHandler.GetInactiveStores)
-			admin.GET("/stores/:id",             storeHandler.GetUserStoreByUserID)
+			admin.GET("/stores/:userID",         storeHandler.GetUserStoreByUserID)
 			admin.PATCH("/stores/:id",           storeHandler.UpdateUserStore)
 			admin.POST("/stores/:id/reactivate", storeHandler.ReactivateUserStore)
 			admin.POST("/stores/:id/deactivate", storeHandler.DeactivateUserStore) // fix: DELETE → POST/PATCH lebih RESTful untuk soft action
@@ -173,6 +173,7 @@ func NewUserRouter(
 			admin.DELETE("/users/:userID/products/:id",          productHandler.DeleteProduct)
 		}
 	}
+
 	return r
 }
 

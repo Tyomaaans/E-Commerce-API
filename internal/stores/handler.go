@@ -157,7 +157,7 @@ func (h *StoreHandler) GetStoreByUserID(c *gin.Context) {
 }
 
 func (h *StoreHandler) GetUserStoreByUserID(c *gin.Context) {
-	id := c.Param("id")
+	id := c.Param("userID")
 
 	store, err := h.storeService.GetStoreByUserID(c.Request.Context(), id)
 	if err != nil {
