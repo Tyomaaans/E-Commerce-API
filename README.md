@@ -247,25 +247,22 @@ REDPANDA_BROKERS=
 ```
 
 ---
-
+ 
 ## Project Status
-
-| Feature | Status |
-|---|---|
-| Auth (register, login, refresh, forgot/reset password) | ✅ Done |
-| Email verification via Redpanda worker | ✅ Done |
-| Role-based access control (Buyer / Seller / Admin) | ✅ Done |
-| User profile & address management | ✅ Done |
-| Store management | ✅ Done |
-| Product management (soft delete) | ✅ Done |
-| Category management (hierarchical) | ✅ Done |
-| MinIO — avatar, product image, store logo | 🚧 In Progress |
-| Payment gateway abstraction | 🚧 In Progress |
-| Real-time chat (WebSocket + Redpanda) | 📋 Planned |
-| Audit log & trace ID via Redpanda | 📋 Planned |
-
+ 
+| Feature | Status | Notes |
+|---|---|---|
+| Auth (register, login, refresh, forgot/reset password) | ✅ Done | |
+| Email verification via Redpanda worker | ✅ Done | |
+| Role-based access control (Buyer / Seller / Admin) | ✅ Done | |
+| User profile & address management | ✅ Done | Avatar field exists, upload pending MinIO |
+| Store management | ✅ Done | Logo field exists, upload pending MinIO |
+| Product management (soft delete) | ✅ Done | Images stored in separate table, upload pending MinIO |
+| Category management (hierarchical) | ✅ Done | |
+| File upload — avatar, store logo, product images | 🚧 In Progress | Blocked on MinIO integration; fields & schema ready |
+| Payment gateway abstraction | 🚧 In Progress | |
+| Product review & rating | 🚧 In Progress | Schema ready, no endpoint or logic yet |
+| Real-time chat (WebSocket + Redpanda) | 📋 Planned | |
+| Audit log & trace ID via Redpanda | 📋 Planned | |
+ 
 ---
-
-## License
-
-MIT
