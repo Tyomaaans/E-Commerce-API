@@ -157,7 +157,7 @@ Three roles with distinct permissions:
 </details>
 
 <details>
-<summary><strong>Admin</strong> — 21 endpoints</summary>
+<summary><strong>Admin</strong> — 23 endpoints</summary>
 
 | Method | Endpoint |
 |---|---|
